@@ -9,6 +9,7 @@
 
 body {
   background-color: hsl(217deg, 54%, 11%);
+  font-size: 18px;
 }
 
 .wrapper {
@@ -20,7 +21,7 @@ main {
   background-color: hsl(216deg, 50%, 16%);
   color: hsl(0deg, 0%, 100%);
   font-family: "Outfit";
-  max-width: 300px;
+  width: 75%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -29,8 +30,9 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 25px;
+  border-radius: 13px;
   padding: 1em;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 main .main-image {
   width: 100%;
@@ -42,19 +44,71 @@ main h2 {
   padding: 0.5em 0;
 }
 main .main-description {
-  color: hsla(0deg, 0%, 100%, 0.45);
+  color: hsl(213deg, 37%, 70%);
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5em;
   padding: 0.5em 0;
 }
-main .value-container .eth-value {
+main .value-container {
   display: flex;
-  flex-direction: row;
-  width: 50%;
+  width: 100%;
+  padding: 1em;
 }
-main .value-container .eth-value * {
-  display: block;
+main .value-container img {
+  padding-top: 0.1em;
+  padding-right: 0.5em;
+}
+main .value-container #eth-value {
+  width: 50%;
+  display: flex;
+  color: cyan;
+}
+main .value-container #eth-value img {
+  width: 11px;
+  height: 18px;
+}
+main .value-container #days-left {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  color: hsl(213deg, 37%, 70%);
+}
+main .value-container #days-left img {
+  width: 17px;
+  height: 17px;
+  padding-top: 0.2em;
+}
+main hr {
+  width: 100%;
+  color: hsl(213deg, 37%, 70%);
+  opacity: 0.05;
+}
+main .creator-data {
+  display: flex;
+  padding: 0.75em 0;
+  width: 100%;
+}
+main .creator-data .creator-image {
+  width: 35px;
+  height: 35px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 47%;
+  position: relative;
+}
+main .creator-data .creator-image img {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  transform: translate(1px, 1px);
+}
+main .creator-data p {
+  margin-top: 0.3em;
+  margin-left: 0.3em;
+}
+main .creator-data p:first-of-type {
+  margin-left: 1em;
+  color: hsl(213deg, 37%, 70%);
 }
 
 /*# sourceMappingURL=style.css.map */

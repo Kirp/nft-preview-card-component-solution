@@ -2,7 +2,8 @@ $Very_dark_blue_main_BG: hsl(217, 54%, 11%)
 $Very_dark_blue_card_BG: hsl(216, 50%, 16%)
 $Very_dark_blue_line: hsl(215, 32%, 27%)
 $White: hsl(0, 0%, 100%)
-    
+$Guess_blue_font_color: hsl(213, 37%, 70%)   
+
 @font-face 
     font-family: "Outfit"
     src: url("./fonts/Outfit-VariableFont_wght.ttf")
@@ -15,6 +16,7 @@ $White: hsl(0, 0%, 100%)
 
 body
     background-color: $Very_dark_blue_main_BG
+    font-size: 18px
 
 .wrapper
     width: 100vw
@@ -25,7 +27,7 @@ main
     background-color: $Very_dark_blue_card_BG
     color: $White
     font-family: "Outfit"
-    max-width: 300px
+    width: 75%
     position: absolute
     display: flex
     flex-direction: column
@@ -34,30 +36,82 @@ main
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    border-radius: 25px
+    border-radius: 13px
     padding: 1em
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 
     .main-image
         width: 100%
         border-radius: 25px
         margin-bottom: 1em
-
+    
     h2
         margin-right: auto
         padding: .5em 0
     
     .main-description
-        color: hsla(0,0%,100%,0.45)
+        color: $Guess_blue_font_color
         font-size: 1em
         font-weight: 300
         line-height: 1.5em
         padding: .5em 0
 
     .value-container
-        .eth-value
-            display: flex
-            flex-direction: row
+        display: flex
+        width: 100%
+        padding: 1em
+        img
+            padding-top: .1em
+            padding-right: .5em
+            
+        #eth-value
             width: 50%
-            *
-                display: block
+            display: flex
+            color: cyan
+            img
+                width: 11px
+                height: 18px
+                
+        #days-left
+            display: flex
+            width: 50%
+            justify-content: right
+            color: $Guess_blue_font_color
+            img
+                width: 17px
+                height: 17px
+                padding-top: 0.2em
+            
+    hr
+        width: 100%
+        color: $Guess_blue_font_color
+        opacity: 0.05
+
+    .creator-data
+        display: flex
+        //border-top: 1px solid $Guess_blue_font_color
+        padding: 0.75em 0
+        width: 100%
+        .creator-image
+            width: 35px
+            height: 35px
+            background-color: $White
+            border-radius: 47%
+            position: relative
+            img
+                width: 95%
+                height: 95%
+                position: absolute
+                transform: translate(1px,1px)
+        p
+            margin-top: 0.3em
+            margin-left: 0.3em
+        p:first-of-type 
+            margin-left: 1em
+            color: $Guess_blue_font_color
+        
+        
+            
+            
+            
 
