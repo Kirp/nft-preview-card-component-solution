@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  background-color: hsl(216deg, 50%, 16%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Outfit";
+  max-width: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  padding: 1em;
+}
+main .main-image {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 1em;
+}
+main h2 {
+  margin-right: auto;
+  padding: 0.5em 0;
+}
+main .main-description {
+  color: hsla(0deg, 0%, 100%, 0.45);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+}
+main .value-container .eth-value {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+main .value-container .eth-value * {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
