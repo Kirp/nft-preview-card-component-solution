@@ -21,7 +21,8 @@ main {
   background-color: hsl(216deg, 50%, 16%);
   color: hsl(0deg, 0%, 100%);
   font-family: "Outfit";
-  width: 75%;
+  min-width: 15ch;
+  max-width: 25ch;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -34,14 +35,46 @@ main {
   padding: 1em;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+main .main-image-container {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
 main .main-image {
   width: 100%;
   border-radius: 25px;
-  margin-bottom: 1em;
+}
+main .eye-blocker {
+  width: 100%;
+  position: absolute;
+  background-color: cyan;
+  opacity: 0.5;
+  height: 99%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  border-radius: 25px;
+}
+main .eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+main .main-image-container:hover .eye-blocker {
+  visibility: visible;
+}
+main .main-image-container:hover .eye {
+  visibility: visible;
 }
 main h2 {
   margin-right: auto;
   padding: 0.5em 0;
+}
+main h2:hover {
+  color: cyan;
+  cursor: pointer;
 }
 main .main-description {
   color: hsl(213deg, 37%, 70%);
@@ -109,6 +142,10 @@ main .creator-data p {
 main .creator-data p:first-of-type {
   margin-left: 1em;
   color: hsl(213deg, 37%, 70%);
+}
+main .creator-data p:last-of-type:hover {
+  color: cyan;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
