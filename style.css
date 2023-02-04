@@ -69,11 +69,12 @@ main .main-image-container:hover .eye-blocker {
 main .main-image-container:hover .eye {
   visibility: visible;
 }
-main h2 {
+main h1 {
+  font-size: 28px;
   margin-right: auto;
   padding: 0.5em 0;
 }
-main h2:hover {
+main h1:hover {
   color: cyan;
   cursor: pointer;
 }
