@@ -21,7 +21,8 @@ main {
   background-color: hsl(216deg, 50%, 16%);
   color: hsl(0deg, 0%, 100%);
   font-family: "Outfit";
-  min-width: 15ch;
+  width: 80%;
+  min-width: 19ch;
   max-width: 25ch;
   position: absolute;
   display: flex;
@@ -42,7 +43,7 @@ main .main-image-container {
 }
 main .main-image {
   width: 100%;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 main .eye-blocker {
   width: 100%;
@@ -53,7 +54,7 @@ main .eye-blocker {
   top: 0;
   left: 0;
   visibility: hidden;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 main .eye {
   position: absolute;
@@ -130,8 +131,8 @@ main .creator-data .creator-image {
   position: relative;
 }
 main .creator-data .creator-image img {
-  width: 95%;
-  height: 95%;
+  width: 92%;
+  height: 92%;
   position: absolute;
   transform: translate(1px, 1px);
 }
@@ -146,6 +147,19 @@ main .creator-data p:first-of-type {
 main .creator-data p:last-of-type:hover {
   color: cyan;
   cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  font-size: 16px;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 285px) {
+  .creator-data p {
+    font-size: smaller;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

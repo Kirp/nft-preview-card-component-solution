@@ -27,7 +27,8 @@ main
     background-color: $Very_dark_blue_card_BG
     color: $White
     font-family: "Outfit"
-    min-width: 15ch
+    width: 80%
+    min-width: 19ch
     max-width: 25ch
     position: absolute
     display: flex
@@ -48,7 +49,7 @@ main
 
     .main-image
         width: 100%
-        border-radius: 25px
+        border-radius: 8px
         
     
     .eye-blocker
@@ -60,7 +61,7 @@ main
         top: 0
         left: 0
         visibility: hidden
-        border-radius: 25px
+        border-radius: 8px
 
     .eye
         position: absolute
@@ -78,9 +79,12 @@ main
     h2
         margin-right: auto
         padding: .5em 0
+        
+
     h2:hover
         color: cyan
         cursor: pointer
+        
 
     
     .main-description
@@ -133,8 +137,8 @@ main
             border-radius: 47%
             position: relative
             img
-                width: 95%
-                height: 95%
+                width: 92%
+                height: 92%
                 position: absolute
                 transform: translate(1px,1px)
         p
@@ -148,6 +152,15 @@ main
             cursor: pointer
         
             
+footer
+    position: absolute
+    font-size: 16px
+    text-align: center
+    display: none
+    
             
-            
-
+@media(max-width: 285px)
+    .creator-data
+        p
+            font-size: smaller
+        
